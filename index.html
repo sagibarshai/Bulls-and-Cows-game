@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cows and Bulls</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="css-reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Spartan:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="header">Bulls & Cows</header>
+    <div id="popup" class="popup">
+        <h1>Guide for BUlls & Cows Game : </h1>
+        <button id="exit-button" class="exit-btn">X</button>
+        <h3 class="popup-paragraph">
+            The system will select a secret number contain 4 different digits. <br>
+            In each round try to guess the secret number. <br>
+            For each number you guess correctly but it is not placed correctly B will increase by one. <br>
+            For each number you guess correctly and it is placed correctly A will increase by one. <br>
+            When you reach the exact number you will win the game. <br>
+            The maximum number of points you can earn in a single game is 10, for each game you will get 10 attempts, if you can not guess correctly by the end of the game your score will be 0 <br>
+        </h3>
+    </div>
+    <button id="instructions" class="instructions">Instructions </button>
+    <div id="totalScore" class="total-score"></div>
+    <div id="score" class="score total-score"></div>
+    <div class="message-container">
+        <div class="lose-message message" id="error-message"></div>
+        <div class="win-message message" id="win-message"></div>
+    </div>
+    <section class="game-container">
+            <input minlength="4" maxlength="4" pattern="[0-9]+" id="user-guess" type="text" class="input__user-choise" placeholder="your choise"/>
+            <button id="submit-button" onclick="submitButtonHandler()">Try</button>
+       <div class="flex-contianer">
+           <div class="rows-trys" id="rows-trys">
+                <h2>Trys </h2>
+                <hr>
+                <!-- trys will in to here -->
+                
+            </div>
+            <div class="rows-guess" id="rows-guess">
+                
+                <h2> Guess</h2>
+                <hr>
+
+                <!-- guess will get here -->
+           
+            </div>
+            <div class="rows-result" id="rows-result">
+                
+                <h2> Result</h2>
+                <hr>
+
+                <!-- result will get here -->
+         
+            </div>
+            <div id="win"></div>
+        </div>
+    </section>
+</body>
+</html>
