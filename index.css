@@ -263,14 +263,14 @@ visibility: hidden;
     }
     
     .popup h1 {
-        top:15%;
+        top:20%;
         left:50%;
         width: 100%;
         font-size: 1.3rem;
         }
     .popup .popup-paragraph {
         position: absolute;
-        top:25%;
+        top:30%;
         left:3%;   
         line-height: 3rem;
         font-size: 1.3rem; 
@@ -278,7 +278,7 @@ visibility: hidden;
     .exit-btn {
         width: 4rem;
         height: 4rem;
-        top:-4%;
+        top:0;
         right:-2.5%;
        
     }
